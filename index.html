@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bali · Stays · Airbnb</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+  <style>
+    .logo{
+      width: 115px;
+      height: 40px;
+    }
+    .star{
+      width: 15px;
+      height: 15px;
+    }
+    .img-fluid{
+      height:200px;
+      width: 100%;
+    }
+    .ratings{
+      font-size: 15px;
+    }
+    .container{
+      max-width: 93%;
+    }
+  </style>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container py-2">
+      <a class="navbar-brand text-danger font-weight-bold collapse navbar-collapse" href="#"><img src="images/logo.png" class="logo"></a>
+
+      <button type="button" class="btn btn-outline-dark rounded-pill justify-content-center"><span class="font-weight-bold">Selected map area</span> | Add dates | Add guests <span class="pl-1"><i class="fas fa-search rounded-circle text-light bg-danger" style="padding: 5px;"></i></span></button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <button type="button" class="btn btn-white rounded-pill mr-2">Become a host</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-white rounded-pill mr-2"><svg width="2em" height="1em" viewBox="0 0 16 16" class="bi bi-globe" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4H2.255a7.025 7.025 0 0 1 3.072-2.472 6.7 6.7 0 0 0-.597.933c-.247.464-.462.98-.64 1.539zm-.582 3.5h-2.49c.062-.89.291-1.733.656-2.5H3.82a13.652 13.652 0 0 0-.312 2.5zM4.847 5H7.5v2.5H4.51A12.5 12.5 0 0 1 4.846 5zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5H7.5V11H4.847a12.5 12.5 0 0 1-.338-2.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12H7.5v2.923c-.67-.204-1.335-.82-1.887-1.855A7.97 7.97 0 0 1 5.145 12zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11H1.674a6.958 6.958 0 0 1-.656-2.5h2.49c.03.877.138 1.718.312 2.5zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12h2.355a7.967 7.967 0 0 1-.468 1.068c-.552 1.035-1.218 1.65-1.887 1.855V12zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5h-2.49A13.65 13.65 0 0 0 12.18 5h2.146c.365.767.594 1.61.656 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4H8.5V1.077c.67.204 1.335.82 1.887 1.855.173.324.33.682.468 1.068z"/>
+            </svg>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            </svg>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline-dark rounded-pill mr-2">
+            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+            <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+          </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class=" container mt-5 mb-5">
+    <p>300+ stays</p>
+    <h2 class="font-weight-bold mb-5">Stays in selected map area</h2>
+    <button type="button" class="btn btn-outline-dark rounded-pill mr-1 mb-2">Cancellation flexibility</button>
+    <button type="button" class="btn btn-outline-dark rounded-pill mr-1 mb-2">Type of place</button>
+    <button type="button" class="btn btn-outline-dark rounded-pill mr-1 mb-2">Price</button>
+    <button type="button" class="btn btn-outline-dark rounded-pill mr-1 mb-2">Instant Book</button>
+    <button type="button" class="btn btn-outline-dark rounded-pill mr-1 mb-2">More Filters</button>
+    <p class="text-secondary mt-4">Enter dates and number of guests to see the total price per night.</p>
+    <hr>
+  </div>
+
+
+  <div class="container mb-5">
+    <p><svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-alarm mr-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"/>
+    </svg><span class="font-weight-bold">Check travel descriptions before booking.</span> Please review and follow government travel guidelines. <a class="text-dark href="#"><u>Learn more</u></a></p>
+
+    <div class="row row-cols-lg-5 row-cols-md-4 row-cols-sm-2 row-cols-1">
+      <div class="col mb-3 text-truncate">
+        <img src="images/1.jpg" class="img-fluid rounded mb-2">
+        <img src="images/star.png" class="star float-left mt-1 mr-1">
+        <p class="ratings">4.88 <span class="text-secondary">(161)</span></p>
+        <p class="text-truncate" style="font-size:15px;">Entire villa · Banjar <br> The Clove House in Minduk - Island in the Sky</p>
+      </div>
+      <div class="col mb-3 text-truncate">
+        <img src="images/2.jpg" class="img-fluid rounded mb-2">
+        <img src="images/star.png" class="star float-left mt-1 mr-1">
+        <p class="ratings">4.83 <span class="text-secondary">(54)</span></p>
+        <p class="text-truncate" style="font-size:15px;">Entire bungalow · Selemadeg Barat <br> NEW OCEAN FRONT LUMBUNG, PRIVATE POOL BALIAN BEACH</p>
+      </div>
+      <div class="col mb-3 text-truncate">
+        <img src="images/3.jpg" class="img-fluid rounded mb-2">
+        <img src="images/star.png" class="star float-left mt-1 mr-1">
+        <p class="ratings">New</p>
+        <p class="text-truncate" style="font-size:15px;">Tiny house · Kecamatan <br> Beach house</p>
+      </div>
+      <div class="col mb-3 text-truncate">
+        <img src="images/4.jpg" class="img-fluid rounded mb-2">
+        <img src="images/star.png" class="star float-left mt-1 mr-1">
+        <p class="ratings">4.88 <span class="text-secondary">(195)</span></p>
+        <p class="text-truncate" style="font-size:15px;">Entire villa · Lalang Lingga <br> NEW Beachfront Villa at Balian Surf Break</p>
+      </div>
+      <div class="col mb-3 text-truncate">
+        <img src="images/5.jpg" class="img-fluid rounded mb-2">
+        <img src="images/star.png" class="star float-left mt-1 mr-1">
+        <p class="ratings">4.75 <span class="text-secondary">(216)</span></p>
+        <p class="text-truncate" style="font-size:15px;">Entire house · Tabanan <br> BEACHFRONT Pool Villa @ Balian Beach 2020 DISCOUNT</p>
+      </div>
+
+      <div class="col mb-3 text-truncate">
+        <img src="images/6.jpg" class="img-fluid rounded mb-2">
+        <img src="images/star.png" class="star float-left mt-1 mr-1">
+        <p class="ratings">4.86 <span class="text-secondary">(7)</span></p>
+        <p class="text-truncate" style="font-size:15px;">Private room · Kecamatan Banjar <br> Munduk Mountain Valley - by Arya Utama GardenVilla</p>
+      </div>
+      <div class="col mb-3 text-truncate">
+        <img src="images/7.jpg" class="img-fluid rounded mb-2">
+        <img src="images/star.png" class="star float-left mt-1 mr-1">
+        <p class="ratings">4.4.71 <span class="text-secondary">(8)</span></p>
+        <p class="text-truncate" style="font-size:15px;">Entire villa · Selemadeg Barat <br> 2BR DELUXE STUDIO+private pool in 75 from surfspot</p>
+      </div>
+      <div class="col mb-3 text-truncate">
+        <img src="images/8.jpg" class="img-fluid rounded mb-2">
+        <img src="images/star.png" class="star float-left mt-1 mr-1">
+        <p class="ratings">5.0 <span class="text-secondary">(8)</span></p>
+        <p class="text-truncate" style="font-size:15px;">Private room · Buleleng Regency <br> Back to Nature with us at Bali De Pardis Cottage</p>
+      </div>
+      <div class="col mb-3 text-truncate">
+        <img src="images/9.jpg" class="img-fluid rounded mb-2">
+        <img src="images/star.png" class="star float-left mt-1 mr-1">
+        <p class="ratings">New</p>
+        <p class="text-truncate" style="font-size:15px;">Shared room · Kecamatan Banjar <br> Reconnect to Nature, Trekking + Waterfalls</p>
+      </div>
+      <div class="col mb-3 text-truncate">
+        <img src="images/10.jpg" class="img-fluid rounded mb-2">
+        <img src="images/star.png" class="star float-left mt-1 mr-1">
+        <p class="ratings">4.51 <span class="text-secondary">(61)</span></p>
+        <p class="text-truncate" style="font-size:15px;">Private room · Munduk <br> 
+        Glamping in the mountains of Munduk</p>
+      </div>
+    
+      <div class="col mb-3 text-truncate">
+        <img src="images/11.jpg" class="img-fluid rounded mb-2">
+        <img src="images/star.png" class="star float-left mt-1 mr-1">
+        <p class="ratings">5.0 <span class="text-secondary">(5)</span></p>
+        <p class="text-truncate" style="font-size:15px;">Entire cottage · Kecamatan Selemadeg <br> Bali Tropical Eco Resort // Lumbung Queen#7</p>
+      </div>
+      <div class="col mb-3 text-truncate">
+        <img src="images/12.jpg" class="img-fluid rounded mb-2">
+        <img src="images/star.png" class="star float-left mt-1 mr-1">
+        <p class="ratings">New</p>
+        <p class="text-truncate" style="font-size:15px;">Shared room · Kecamatan  Banjar <br> Bed in Dorm @ Ekommunity Farmstay in Munduk</p>
+      </div>
+      <div class="col mb-3 text-truncate">
+        <img src="images/13.jpg" class="img-fluid rounded mb-2">
+        <img src="images/star.png" class="star float-left mt-1 mr-1">
+        <p class="ratings">4.88 <span class="text-secondary">(17)</span></p>
+        <p class="text-truncate" style="font-size:15px;">Entire cottage · Jembrana Regency <br> Entire wood house surrounded by nature</p>
+      </div>
+      <div class="col mb-3 text-truncate">
+        <img src="images/14.jpg" class="img-fluid rounded mb-2">
+        <img src="images/star.png" class="star float-left mt-1 mr-1">
+        <p class="ratings">4.81 <span class="text-secondary">(26)</span></p>
+        <p class="text-truncate" style="font-size:15px;">Entire cottage · Selemadeg Barat <br> Chempaka Cottage right beside Balian river</p>
+      </div>
+      <div class="col mb-3 text-truncate">
+        <img src="images/15.jpg" class="img-fluid rounded mb-2">
+        <img src="images/star.png" class="star float-left mt-1 mr-1">
+        <p class="ratings">4.81 <span class="text-secondary">(36)</span></p>
+        <p class="text-truncate" style="font-size:15px;">Entire villa · Seririt <br> The View Villa - New Build 180° Panoramic View</p>
+      </div>
+   
+      <div class="col mb-3 text-truncate">
+        <img src="images/16.jpg" class="img-fluid rounded mb-2">
+        <img src="images/star.png" class="star float-left mt-1 mr-1">
+        <p class="ratings">4.92 <span class="text-secondary">(25)</span></p>
+        <p class="text-truncate" style="font-size:15px;">Hotel room · Singaraja <br> Beachfront boutique hotel in Lovina</p>
+      </div>
+      <div class="col mb-3 text-truncate">
+        <img src="images/17.jpg" class="img-fluid rounded mb-2">
+        <p class="text-secondary">No reviews yet</p>
+        <p class="text-truncate" style="font-size:15px;">Entire bungalow · West Selemadeg <br> Rajapala Sumatran Style Wooden  Beach House</p>
+      </div>
+      <div class="col mb-3 text-truncate">
+        <img src="images/18.jpg" class="img-fluid rounded mb-2">
+        <img src="images/star.png" class="star float-left mt-1 mr-1">
+        <p class="ratings">4.80 <span class="text-secondary">(5)</span></p>
+        <p class="text-truncate" style="font-size:15px;">Private room · Kecamatan Selemadeg <br> Kusfarm Bali, Wood Cabin, complete nature elements</p>
+      </div>
+      <div class="col mb-3 text-truncate">
+        <img src="images/19.jpg" class="img-fluid rounded mb-2">
+        <img src="images/star.png" class="star float-left mt-1 mr-1">
+        <p class="ratings">5.0 <span class="text-secondary">(5)</span></p>
+        <p class="text-truncate" style="font-size:15px;">Entire cottage · Kecamatan Selemadeg <br> Jungle Eco Resort, Lumbung Twin #2 KusFarm Bali</p>
+      </div>
+      <div class="col mb-3 text-truncate">
+        <img src="images/20.jpg" class="img-fluid rounded mb-2">
+        <img src="images/star.png" class="star float-left mt-1 mr-1">
+        <p class="ratings">New
+        </p>
+        <p class="text-truncate" style="font-size:15px;">Entire villa · Kecamatan Banjar <br> The Lovina Villa/ Rest ~ Relax ~ Recharge!</p>
+      </div>
+  </div>
+
+  <div class="container text-center pb-5">
+    <p>1-20 of 300+ places to stay</p>
+    <p class="text-secondary" style="font-size: 12px;">Enter dates to see full pricing. Additional fees apply. Taxes may be added.</p>
+  </div>
+  <footer class="bg-light py-5 border-top border-bottom">
+    <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-12  mb-3">
+        <p class="font-weight-bold">ABOUT</p>
+        <a class="text-dark" href="#">How Airbnb works</a><br>
+        <a class="text-dark" href="#">Newsroom</a><br>
+        <a class="text-dark" href="#">Airbnb Plus</a><br>
+        <a class="text-dark" href="#">Airbnb Luxe</a><br>
+        <a class="text-dark" href="#">HotelTonight</a><br>
+        <a class="text-dark" href="#">Airbnb for Work</a><br>
+        <a class="text-dark" href="#">Olympics</a><br>
+        <a class="text-dark" href="#">Career</a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-12  mb-3">
+        <p class="font-weight-bold">COMMUNITY</p>
+        <a class="text-dark" href="#">Diversity & Belonging</a><br>
+        <a class="text-dark" href="#">Accessibility</a><br>
+        <a class="text-dark" href="#">Airbnb Associates</a><br>
+        <a class="text-dark" href="#">Frontline Stays</a><br>
+        <a class="text-dark" href="#">Invite Friends</a><br>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-12  mb-3">
+        <p class="font-weight-bold">HOST</p>
+        <a class="text-dark" href="#">Host your home</a><br>
+        <a class="text-dark" href="#">Host an Online Experience</a><br>
+        <a class="text-dark" href="#">Host Experience</a><br>
+        <a class="text-dark" href="#">Responsible hosting</a><br>
+        <a class="text-dark" href="#">HotelTonight</a><br>
+        <a class="text-dark" href="#">Open Homes</a><br>
+        <a class="text-dark" href="#">Resource Centre</a><br>
+        <a class="text-dark" href="#">Community Centre</a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-12  mb-3">
+        <p class="font-weight-bold">SUPPORT</p>
+        <a class="text-dark" href="#">Updates for COVID-19</a><br>
+        <a class="text-dark" href="#">Help Centre</a><br>
+        <a class="text-dark" href="#">Cancellation Options</a><br>
+        <a class="text-dark" href="#">Neighbourhood Support</a><br>
+        <a class="text-dark" href="#">Trust & Safety</a><br>
+      </div>
+    </div>
+  </div>
+    
+  </footer>
+
+    
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</hmtl>
